@@ -33,6 +33,8 @@ function sendMail(to, subject, html) {
   const mailOptions = {
     from: config.EMAIL,
     to,
+    cc,
+    bcc,
     subject,
     generatedTextFromHTML: true,
     html,
